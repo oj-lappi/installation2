@@ -1,0 +1,54 @@
+Nu skriver jag en mening.
+i för insert-mode (var man kan skriva), Esc för normal-mode (var man kan editera).
+
+i normal-mode kan man använda sig av kommandon.
+Kommandon består av actions (något man gör) och movements (sätt att förflytta sig).
+
+Exempel på movements:
+w	word, förflytta dig ett ord framåt
+W	Word, förflytta dig till ordet efter nästa mellanslag
+b	back, förflytta dig ett ord bakåt
+h	vänster
+l	höger
+j	ner
+k	upp
+G	gå till bottnet av filen
+gg	gå till toppen av filen
+0	gå till början av raden
+$	gå till slutet av raden
+
+/	sök ord
+f	sök bokstav framåt
+F	sök bokstav bakåt
+
+Ctrl-D	neråt ett halft fönster
+Ctrl-U	uppåt ett halft fönster
+
+man kan modifiera movements med tal, prova t.ex. 2w
+
+Exempel på actions:
+i	insert, gå in i insert mode vid kursorn
+I	Insert, gå in i insert mode vid början av raden
+a	append, gå in i insert mode en bokstav till höger om kursorn
+A	Append, gå in i insert mode i slutet av raden
+o	gå in i insert mode en rad under, skapa ny rad
+O 	gå in i insert mode en rad ovanför, skapa ny rad
+
+d	delete, radera text, kräver en movement. raderar allt mellan kursorn och vart den flyttar sig
+dd	raderar en rad
+d3d	radera tre rader
+D	radera till slutet av raden
+
+u	undo, förintetgör förra inputten eller kommandot
+Ctrl-R	redo
+.	gör om förra kommandot
+
+c	change, samma som d, fast startar insert mode
+
+
+mer komplicerade kommandon skrivs med :
+:w	write, spara filen
+:q	quit, stäng av vim
+:wq	spara och sluta
+:q!	force quit
+
