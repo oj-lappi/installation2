@@ -1,0 +1,68 @@
+cd [dirname]
+============
+
+ - byt katalog (ungefär samma som mapp)
+ - utan parameter byter du till din hemmkatalog
+
+ls [dirname]
+============
+
+ - lista filer i en katalog
+ - utan parameter listar du katalogen som du är i
+
+
+ls -l [dirname]
+===============
+
+ - listar mera information
+
+```		
+drwxr-xr-x  2 root    root      4096 Jun  7 19:52 skel
+-rw-r--r--  1 root    root      2030 Mar  9  2018 slsh.rc
+||||┊┊┊┋┋┋    |	      |		|    |
+||||┊┊┊┋┋┋    |	      |		|    datum filen sist har ändrats
+||||┊┊┊┋┋┋    |       |		storleken på filen i bytes
+||||┊┊┊┋┋┋    |       gruppen som äger filen
+||||┊┊┊┋┋┋    användaren som äger filen
+||||┊┊┊┋┋┋    
+||||┊┊┊┋┋┋- användarrättigheter för alla andra 
+||||--- - användarrättigheter för gruppen som äger filen
+|... - användarrättigheter för användaren som äger filen
+|
+.- directory = är det en mapp (d) eller en fil (-)?
+```
+
+ls -lh [dirname]
+================
+ - [h]umanreadable storlekar
+
+Att skapa filer
+===============
+
+Det finns många sätt att skapa filer
+
+touch [filnamn]
+===============
+
+ - Skapar en tom fil med namnet [filnamn]
+
+> och >> (redirect)
+===================
+
+ - Kan också skapa filer. Om destinationen inte finns, skapas filen.
+
+
+rm [mönster]
+============
+
+ - Tar bort alla filer vars filstig matchar mönstret
+
+ - Shell-mönster går också att använda i nästan alla andra kommandon också
+
+
+cat [fil1] [fil2] [fil3]...
+===========================
+
+ - con[cat]enate, att lägga två texter efter varandra
+
+

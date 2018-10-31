@@ -1,0 +1,11 @@
+Det finns några symboler som används för att skapa mönster i filnamn/stigar.
+
+*
+===
+
+* matchar hur många symboler som helst (eller inga) i ett namn/en stig
+
+?
+===
+
+? matchar en symbol i ett namn/en stig

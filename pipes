@@ -1,0 +1,19 @@
+Pipes
+=====
+
+| kopplar ihop stdout från ett program, med stdin från ett annat program
+
+Eftersom stdin och stdout finns kan vi koppla ihop vilka som helst program i en pipeline, en serie av program.
+
+Program som tar in data, och ger ut förändrat output kallas för filter
+
+T.ex.
+
+sed
+===
+
+```
+sed -e "s/batman/robin/"
+```
+
+Byter ut batman mot robin i en text

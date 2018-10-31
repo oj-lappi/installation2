@@ -1,0 +1,28 @@
+Filer i unix
+============
+
+File descriptors är hur unix-system hanterar filer
+
+En file descriptor är internt i unix system bara ett tal
+
+Med hjälp av file descriptorn kan vi skriva och läsa till och från en fil, eller fil-liknande saker.
+
+"Fil-liknande saker" inkluderar input till program, output från program, och errors från ett program.
+
+Dessa är de tre standard file descriptorerna:
+
+Namn	tal
+====	===
+stdin	0
+stdout	1
+stderr	2
+
+
+Man kan redirecta vad som skrivs till file descriptors till en fil med hjälp av > och >> operatorerna
+
+> utan något extra skriver endast stdout till en fil
+om man vill skriva stderr, skriver man 2>
+
+Ett vanligt exempel är att skriva stderr till /dev/null
+
+
